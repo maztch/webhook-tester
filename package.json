@@ -1,0 +1,22 @@
+{
+  "name": "webhook-tester",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudflare Worker webhook tester with viewer and catch-all API endpoint.",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "keywords": [
+    "cloudflare",
+    "worker",
+    "wrangler",
+    "webhook"
+  ],
+  "author": "maztch <maztch@gmail.com> (https://maztch.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.66.0"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "webhook-tester",
+  "main": "src/index.js",
+  "compatibility_date": "2026-05-26",
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "WEBHOOK_STORE",
+        "class_name": "WebhookStore"
+      },
+      {
+        "name": "PROJECT_REGISTRY",
+        "class_name": "ProjectRegistry"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "WebhookStore"
+      ]
+    },
+    {
+      "tag": "v2",
+      "new_sqlite_classes": [
+        "ProjectRegistry"
+      ]
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
