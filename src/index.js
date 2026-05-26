@@ -743,12 +743,12 @@ function renderHomePage(origin) {
               </div>
             </div>
             <div class="field">
-              <label for="viewerToken">Viewer Password</label>
-              <input id="viewerToken" type="password" autocomplete="new-password" />
+              <label for="viewerToken">Viewer Password (Optional)</label>
+              <input id="viewerToken" type="password" autocomplete="new-password" placeholder="Leave empty to keep viewer open" />
             </div>
             <div class="field">
-              <label for="apiToken">API Bearer Token</label>
-              <input id="apiToken" type="password" autocomplete="new-password" />
+              <label for="apiToken">API Bearer Token (Optional)</label>
+              <input id="apiToken" type="password" autocomplete="new-password" placeholder="Leave empty to keep API open" />
             </div>
             <div class="field">
               <label for="description">Description</label>
